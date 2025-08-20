@@ -1,0 +1,489 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(17, 17, 58);
+  color: white;
+  font-family: "Poppins", "Roboto";
+  height: 100vh;
+  width: auto;
+  padding: 0;
+  margin: 0;
+  /* display: flex; */
+  margin-bottom: 5vh; /* Add space for footer */
+}
+
+header > nav {
+  background-color: rgb(31, 31, 84);
+  width: 100vw;
+  height: 100%;
+  /* padding-bottom: 2em; */
+}
+
+/* logo */
+header nav > .left-side {
+  display: flex;
+  justify-content: left;
+  /* align-content: center; */
+}
+header nav > .left-side img {
+  display: flex;
+  margin: 1em 8em;
+  /* align-items: center; */
+  max-height: 3em;
+}
+
+/* nav-links */
+header nav > .right-side a {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  display: grid;
+  place-items: centre;
+}
+header nav > .right-side {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  gap: 3em;
+  margin-right: 8em;
+  padding-bottom: 2em;
+}
+
+header nav .right-side a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: width 0.5s;
+}
+header nav .right-side a:hover::after {
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap; /* Allows links to wrap on small screens */
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* -------------------- Body-------------------- */
+
+/* Developer Portfolio */
+h1 {
+  text-align: center;
+  margin-top: 1em;
+  font-size: 4em;
+  /* color: rgb(132, 0, 255); */
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+
+/* section > .left-align {
+  width: 50%;
+  margin-left: 3em;
+  line-height: 1.4;
+  font-size: 2em;
+}  */
+
+.left-align > p {
+  line-height: 1.4;
+  margin-bottom: 1em;
+}
+
+.left-align > p #span-1 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.left-align > p > span {
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.left-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+  margin: 2em 8em;
+}
+
+/* button {
+  display: inline-block;
+  background-color: purple;
+  padding: 1.5em;
+  font-size: medium;
+  color: #fff;
+  border-radius: 1em;
+  border: 1em;
+  margin-top: 1em;
+  cursor: pointer;
+  font-weight: bold;
+} */
+
+/* CV */
+.resume-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: purple;
+  color: white;
+  font-size: medium;
+  text-decoration: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.resume-btn:hover {
+  background: purple;
+  transform: scale(1.05);
+}
+
+/* GitHub */
+.github-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background-color: #24292e;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s, transform 0.2s;
+  border: none;
+  font-size: medium;
+  cursor: pointer;
+}
+
+.github-btn i {
+  font-size: medium;
+}
+
+.github-btn:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+
+/* Right-side image */
+section > .right-align {
+  width: 30%;
+  margin-right: 3em;
+  display: flex;
+  height: 30rem;
+}
+
+section.line {
+  height: 5em;
+  position: relative;
+  margin-bottom: 10em;
+}
+
+footer + section.line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2em;
+}
+
+.horizontal-line {
+  background-color: #fff;
+  width: 80vw;
+  height: 0.2em;
+  margin: 5em auto;
+  display: block;
+}
+
+/* section.lines {
+  justify-content: space-between;
+} */
+
+/* .line {
+  display: flex;
+} */
+
+h2.journey {
+  /* width: 100vw; */
+  /* display: block; */
+  text-align: center;
+  /* margin: em ; */
+}
+
+.lines {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2em;
+  position: relative;
+}
+
+.lines > .line-1,
+.lines > .line-2,
+.lines > .line-3,
+.lines > .line-4 {
+  background-color: #fff;
+  height: 3em;
+  width: 0.5em;
+  margin-bottom: 1em;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.title {
+  margin-top: -4em;
+  margin-left: -0.8em;
+  width: 1em;
+}
+
+.paragraph {
+  width: 10em;
+  margin-top: 5em;
+  margin-left: -2em;
+}
+
+section.line,
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+/* -------------------- -------------------- */
+h2 {
+  margin-top: 1em;
+}
+
+a.sec-1 > h3 > #front-end {
+  text-decoration-line: none;
+}
+
+.sec-1 {
+  margin-top: 1em;
+  text-align: justify;
+}
+
+.sec-2 {
+  margin-top: 1em;
+  word-spacing: normal;
+  text-align: justify;
+}
+
+/* -------------------- About-------------------- */
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+  margin: 8em 8em;
+  gap: 5%;
+}
+
+.column-1 {
+  flex-basis: 30%;
+}
+.column-1 img {
+  width: 100%;
+  background-color: rgb(87, 87, 179);
+  border-radius: 2rem;
+}
+.column-2 {
+  width: 60%;
+  text-align: center;
+}
+.column-2 p {
+  text-align: justify;
+}
+
+/* below P tag */
+.tab-title {
+  display: flex;
+  gap: 5em;
+  font-weight: bolder;
+  margin-top: 3rem;
+}
+.tab-links {
+  margin-right: 1em;
+  font-size: large;
+  cursor: pointer;
+  position: relative;
+}
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 0.1em;
+  background-color: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -1em;
+  transition: 0.5s;
+}
+.tab-links.active-link::after {
+  width: 70%;
+}
+
+.tab-contents ul li {
+  list-style: none;
+  color: #fff;
+  text-align: left;
+  margin-top: 2rem;
+}
+.tab-contents ul li span {
+  color: #c82b5c;
+}
+
+.tab-contents {
+  display: none;
+}
+.tab-contents.active-tab {
+  display: block;
+}
+/* -------------------- Contact Me-------------------- */
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+  margin: 2em 8em;
+}
+/* .sub-conatiner1 > .heading-title h1 {
+  font-size: 5rem;
+} */
+.sub-conatiner1 {
+  display: flexbox;
+  flex-direction: column;
+}
+input,
+button {
+  flex-direction: column;
+}
+form > .sub-conatiner2 input {
+  display: flex;
+  flex-direction: column;
+}
+/* -------------------- footer-------------------- */
+
+footer {
+  background-color: rgb(31, 31, 71);
+  /* height: 10em; */
+  margin-bottom: 0;
+  position: relative;
+  width: 100%;
+  margin-top: 10em;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-links1,
+.footer-links2 {
+  padding: 2em 0;
+}
+
+.footer-links1 > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  margin-left: 2em;
+}
+
+.footer-links2 > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  margin-left: 2em;
+}
+
+.footer-links1 a {
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+}
+
+.footer-links1 a:hover {
+  color: rgb(107, 76, 135);
+}
+.footer-links2 a:hover {
+  color: rgb(107, 76, 135);
+}
+
+.footer-links2 a {
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+}
+
+footer > p {
+  display: flex;
+  align-items: center;
+  color: rgb(80, 80, 222);
+}
+
+/* Tablet (between 601px and 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  body {
+    /* background-color: lightgreen; */
+  }
+}
+
+/* Mobile (600px and below) */
+@media (max-width: 600px) {
+  header {
+    width: 100vw;
+  }
+
+  .heading-1 {
+    text-align: center;
+    margin-top: 2em;
+  }
+
+  section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+  }
+
+  section > .left-align {
+    width: 80%;
+    margin-left: 0.5em;
+    font-size: 1em;
+  }
+
+  section > .right-align {
+    width: 20%;
+    margin-right: 0.5em;
+    display: flex;
+    height: 10em;
+  }
+
+  button {
+    padding: 1em;
+    font-size: small;
+    border-radius: 1em;
+    border: 1em;
+    margin-top: 1em;
+    font-weight: lighter;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
