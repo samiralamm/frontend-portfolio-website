@@ -28,12 +28,16 @@ Built using **HTML, CSS, and JavaScript** with a focus on clean UI and responsiv
 
 ## 📂 Project Structure
 
+```bash
+frontend-portfolio-website/
 ├── index.html
 ├── style.css
 ├── script.js
 ├── assets/
-│ └── images/
+│   ├── images/
+│   └── icons/
 └── README.md
+```
 
 ---
 
